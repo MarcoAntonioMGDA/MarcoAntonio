@@ -1,0 +1,115 @@
+.about-my-services {
+    background: #f4f4f4;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    .top-arrow {
+        width: 50px;
+        height: 50px;
+        border-top: 2px solid $color1;
+        border-right: 2px solid $color1;
+        //border-radius: 3px 0px 3px 0px;
+        margin-left: auto;
+    }
+
+    .body {
+        padding: 10px 5%;
+        width: 100%;
+
+        .tittle {
+            padding-left: 10px;
+            border-left: 2px solid gray;
+            color: black;
+        }
+
+        .subtittle {
+            padding-left: 10px;
+            border-left: 2px solid $color1;
+            color: black;
+        }
+        
+        a {
+            text-decoration: none;
+        color: $color1;
+        font-weight: bold;
+        transition: 0.5s all;
+
+        &:hover {
+            color: $color4;
+        }
+        }
+    }
+
+    .bottom-arrow {
+        width: 50px;
+        height: 50px;
+        border-bottom: 2px solid $color1;
+        border-left: 2px solid $color1;
+        //border-radius: 3px 0px 3px 0px;
+        margin-right: auto;
+    }
+}
+
+.fun-facts {
+
+    //padding: 10px 5%;
+    .tittle {
+        padding-left: 10px;
+        border-left: 2px solid gray;
+        color: black;
+    }
+
+    .subtittle {
+        padding-left: 10px;
+        border-left: 2px solid $color1;
+        color: black;
+    }
+
+    .fun-box {
+        background: #f4f4f4;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        .top-arrow {
+            width: 25px;
+            height: 25px;
+            border-top: 2px solid $color1;
+            border-left: 2px solid $color1;
+            //border-radius: 3px 0px 3px 0px;
+            margin-right: auto;
+        }
+
+        .fun-box-body {
+            padding: 3px 10%;
+            text-align: center;
+            line-height: 2.5em;
+            width: 100%;
+
+            .fun-icon {
+                color: $color1;
+                font-size: 45px;
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 20px;
+                color: #747474;
+            }
+        }
+
+        .bottom-arrow {
+            width: 25px;
+            height: 25px;
+            border-bottom: 2px solid $color1;
+
+            border-right: 2px solid $color1;
+            //border-radius: 3px 0px 3px 0px;
+            margin-left: auto;
+        }
+    }
+}

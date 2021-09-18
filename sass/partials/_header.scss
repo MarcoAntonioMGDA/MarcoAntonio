@@ -1,0 +1,185 @@
+@mixin HeaderSetup {
+    width: 100%;
+    min-width: 230px;
+    max-width: 230px;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    /*  background: green;
+            color: white;*/
+    background: $color3;
+    z-index: 11;
+    scrollbar-width: thin;
+    scrollbar-color: $color1 $color3;
+box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color3;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color1;
+        //border-radius: 6px;
+        //border: 3px solid $color3;
+    }
+
+    .picture-frame {
+        img {
+            width: 100%;
+            display: block;
+            pointer-events: none;
+        }
+
+        margin-bottom: 10px;
+    }
+
+    .Logo-Mb {
+        display: none;
+    }
+
+    .Page-Name-Link {
+        display: block;
+        width: 100%;
+        padding: 0px 5px;
+        text-align: center;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        font-size: 22px;
+        line-height: 0.7em;
+        text-decoration: none;
+        color: $color1;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color4;
+        }
+    }
+
+    .autowriting {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    nav {
+        padding-left: 10%;
+
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 10px 20px 10px 22px;
+                    //background: green;
+                    margin: 5px 0px;
+                    border-radius: 25px 0% 0% 25px;
+                    text-decoration: none;
+                    color: black;
+
+                    span {
+                        display: flex;
+                        width: 30px;
+                        height: 30px;
+                        justify-content: center;
+                        align-items: center;
+                        background: $color1;
+                        color: white;
+                        margin-right: 5px;
+                        border-radius: 50%;
+                        transition: 0.3s all;
+
+                        i {
+                            font-size: 13px;
+                        }
+                    }
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        background: $color1;
+                        color: $color2;
+
+                        span {
+                            background: white;
+                            color: $color1;
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+
+                .link-active {
+                    background: $color1;
+                    color: $color2;
+
+                    span {
+                        background: white;
+                        color: $color1;
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    @media(min-width: $break-medium) {
+        @include HeaderSetup;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        top: 0;
+        @import 'footer-header';
+    }
+}
+
+@mixin Mobile-Menu-Setup {
+    display: block;
+    height: calc(100vh - 55px);
+    min-height: calc(100vh - 55px);
+    max-height: calc(100vh - 55px);
+    top: 55px;
+    @include HeaderSetup;
+}
+
+@media (max-width: $break-medium) {
+    .active-menu {
+        @include Mobile-Menu-Setup;
+        @import 'footer-header';
+        animation: 0.5s appearmenu ease;
+
+        @keyframes appearmenu {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    .desactivate-menu {
+        @include Mobile-Menu-Setup;
+        @import 'footer-header';
+        animation: 0.5s dappearmenu ease;
+        transform: translateX(-100%);
+
+        @keyframes dappearmenu {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
