@@ -168,10 +168,10 @@
                     <div class="skill">
                         <div class="skill-top">
                             <p>JS</p>
-                            <p>70%</p>
+                            <p>72%</p>
                         </div>
                         <div class="skill-bottom">
-                            <p id="lang4" class="w70p"></p>
+                            <p id="lang4" class="w72p"></p>
                         </div>
                     </div>
                     <div class="skill">
@@ -181,6 +181,15 @@
                         </div>
                         <div class="skill-bottom">
                             <p id="lang4" class="w65p"></p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top">
+                            <p>NODEJS</p>
+                            <p>10%</p>
+                        </div>
+                        <div class="skill-bottom">
+                            <p id="lang4" class="w10p"></p>
                         </div>
                     </div>
                     <div class="skill">
