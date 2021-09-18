@@ -321,6 +321,15 @@
     <br>
     <br>
     <div class="flex-s-a">
+    <a class="certification-box box-4 box-i-5 box-m-6 box-p-10" href="documents/certifications/sitepoint1.pdf" target="_blank">
+            <div class="top-arrow"></div>
+            <div class="fun-box-body">
+                <img src="img/pages/resume/certs/sitepoint.png" alt="Logo" class="mauto w50p maxw400px">
+                <h2>Master Mobile UX</h2>
+                <p><i class="fas fa-calendar-alt"></i> Sep 2021</p>
+            </div>
+            <div class="bottom-arrow"></div>
+        </a>
         <a class="certification-box box-4 box-i-5 box-m-6 box-p-10" href="documents/certifications/activate1.pdf" target="_blank">
             <div class="top-arrow"></div>
             <div class="fun-box-body">

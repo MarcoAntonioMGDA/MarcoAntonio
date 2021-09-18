@@ -45,6 +45,7 @@
             <a href="<?php echo $TWLink;?>"><i class="fab fa-twitter"></i></a>
             <a href="<?php echo $IGLink;?>"><i class="fab fa-instagram"></i></a>
             <a href="<?php echo $LinLink;?>"><i class="fab fa-linkedin"></i></a>
+            <a href="<?php echo $GitLink;?>"><i class="fab fa-github"></i></a>
         </div>
         <div class="bottom-arrow"></div>
     </div>

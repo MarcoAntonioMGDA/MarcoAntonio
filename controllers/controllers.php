@@ -35,6 +35,7 @@ $TWLink = "https://twitter.com/MarAntBQ";
 $WALink = "https://api.whatsapp.com/message/76OGEPGPDWQ2A1";
 $PHLink = "tel:+593982345160";
 $LinLink = "https://www.linkedin.com/in/marco-antonio-bustillos-quiroz-a98195165/";
+$GitLink = "https://github.com/MarcoAntonioMGDA";
 $IGLink = "https://www.instagram.com/marantbq/";
 $YTLink  = "https://www.youtube.com/channel/UCdVLdxEW8STQq-IP8HTndag/";
 $ELink = "mailto:hire-me@fullstackwebdeveloper.xyz";
