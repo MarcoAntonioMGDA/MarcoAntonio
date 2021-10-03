@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head.ejs')%>
+    <%- include('includes/pwa.ejs')%>
+</head>
+<body>
+    <top-header>
+        <%- include('includes/top-header.ejs')%>
+    </top-header>
+    <header>
+    <%- include('includes/header.ejs')%>
+    </header>
+    <main onclick="destroymenu2()">
+        <%- include('pages/' + PagetoLoad); -%>
+    </main>
+    <%- include('includes/pwa-sw.ejs')%>
+</body>
+</html>
