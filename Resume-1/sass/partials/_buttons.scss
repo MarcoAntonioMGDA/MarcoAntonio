@@ -1,0 +1,32 @@
+@mixin btn-settings {
+    width: 150px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.btn {
+    @include btn-settings;
+}
+
+.btn-center-df {
+    @include btn-settings;
+    margin-left: auto;
+    margin-right: auto;
+    background: $color1;
+    color: white;
+    &:hover {
+        background: $color2;
+        color: $color1;
+    }
+}
+
+.btn-center {
+    @include btn-settings;
+    margin-left: auto;
+    margin-right: auto;
+}

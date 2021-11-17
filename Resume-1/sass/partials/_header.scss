@@ -1,0 +1,104 @@
+header {
+    img {
+        filter: drop-shadow(2px 2px 2.5px #ffffff);
+    }
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/layout/main/my-account.jpg);
+    min-height: 100vh;
+    color: white;
+    padding: 30px 15px;
+
+    .person-tittle {
+        color: $color3;
+
+        span {
+            color: $color2;
+        }
+    }
+
+    .social-media {
+        margin-top: 15px;
+
+        a {
+            margin: 0px 15px;
+            border: 1px solid white;
+            border-radius: 25%;
+            transform: rotate(45deg);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            transition: 0.5s;
+
+            i {
+                transition: 0.5s;
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                i {
+                    transform: rotate(-405deg);
+                }
+
+                background: $color2;
+                color: $color1;
+
+            }
+
+        }
+    }
+}
+
+.scroll-down {
+    //background: green;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin: 5px auto;
+    margin-top: 50px;
+    transition: 0.1s all;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    //box-sizing: border-box;
+    span {
+        width: 4px;
+        height: 15px;
+        background: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 8px;
+        transition: 2s all;
+        animation: 2s ease infinite scrolldownanimation;
+
+        @keyframes scrolldownanimation {
+            0% {
+                top: 8px;
+            }
+
+            50% {
+                top: 30px;
+                opacity: 0.5;
+            }
+
+            100% {
+                top: 8px;
+                opacity: 1;
+            }
+        }
+    }
+}

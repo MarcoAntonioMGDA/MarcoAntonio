@@ -1,0 +1,57 @@
+.loader {
+    background: $color3;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 3s ease LoaderAnimation;
+
+    @keyframes LoaderAnimation {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    img {
+        width: 50%;
+        max-width: 750px;
+        animation: 3s ease LoaderAnimationImg;
+
+        @keyframes LoaderAnimationImg {
+            from {
+                transform: scale(0.1);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+header {
+    transform: translateY(0);
+    animation: 1s ease LoaderHeader;
+
+    @keyframes LoaderHeader {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+footer {
+    background: $color2;
+    padding: 10px;
+    p {
+        text-align: center;
+        line-height: 2em;
+        color: $color1;
+    }
+}
+
+.move-top-none {
+    display: none;
+}
+
+.move-top {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color: $color1;
+    background: $color2;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 30;
+    border: 3px solid $color1;
+    opacity: 1;
+    animation: 1s DAMT ease;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 5px;
+
+    &:hover {
+        background: $color1;
+        color: $color3;
+        border: 3px solid $color3;
+        transform: rotate(360deg);
+    }
+
+    &:active {
+        transform: scale(0.1);
+    }
+
+    @keyframes DAMT {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}

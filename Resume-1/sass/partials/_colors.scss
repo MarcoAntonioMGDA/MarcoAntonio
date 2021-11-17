@@ -1,0 +1,69 @@
+//https://coolors.co/14213d-fca311-e5e5e5-000000
+$color1: #14213D;
+$color2: #FCA311;
+$color3: #E5E5E5;
+$color4: black;
+
+.color1 {
+    color: $color1;
+}
+
+.hc1:hover {
+    color: $color1;
+}
+
+.color2 {
+    color: $color2;
+}
+
+.hc2:hover {
+    color: $color2;
+}
+
+.color3 {
+    color: $color3;
+}
+
+.hc3:hover {
+    color: $color3;
+}
+
+.color4 {
+    color: $color4;
+}
+
+.hc4:hover {
+    color: $color4;
+}
+
+.backg1 {
+    background: $color1;
+}
+
+.hbg1:hover {
+    background: $color1;
+}
+
+.backg2 {
+    background: $color2;
+}
+
+.hbg2:hover {
+    background: $color2;
+}
+
+.backg3 {
+    background: $color3;
+}
+
+.hbg3:hover {
+    background: $color3;
+}
+
+.backg4 {
+    background: $color4;
+}
+
+.hbg4:hover {
+    background: $color4;
+}
