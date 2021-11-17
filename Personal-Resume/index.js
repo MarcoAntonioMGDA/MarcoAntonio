@@ -47,14 +47,16 @@ app.use((error, req, res, next) => {
         pageTitle: 'Error de Validación',
         PagetoLoad: '500',
         SocialLinks: {
-            Facebook: "https://www.facebook.com/",
-            Twitter: "https://twitter.com/",
-            WhatsApp: "https://api.whatsapp.com/send?phone=593",
-            Phone: "tel:+99999999999",
-            Instagram: "https://www.instagram.com/",
-            Youtube: "https://www.youtube.com/",
-            Email: "mailto:@",
-            Copyright: "https://Sites.MarBust.com"
+          Facebook: "https://www.facebook.com/MarAntBQFullStackWebDeveloper/",
+          Twitter: "https://twitter.com/MarAntBQ",
+          WhatsApp: "https://api.whatsapp.com/send?phone=59382345160",
+          Phone: "tel:+593982345160",
+          Instagram: "https://www.instagram.com/marantbq/",
+          Youtube: "https://www.youtube.com/channel/UCdVLdxEW8STQq-IP8HTndag/",
+          Email: "mailto:hire-me@fullstackwebdeveloper.xyz",
+          Linkedin: "https://www.linkedin.com/in/marantbq/",
+          GitHub: "https://github.com/MarcoAntonioMGDA",
+          Copyright: "https://Sites.MarBust.com"
         }
     });
   });
