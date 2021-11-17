@@ -1,0 +1,103 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../img/pages/home/video.jpg);
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+    main {
+        background: white;
+        min-height: 100vh;
+        .page-section {
+            padding: 55px 5% 30px 5%;
+            .hr-top {
+                width: 65px;
+                margin: 5px auto;
+                border: 0;
+                height: 15px;
+                border-top: 5px solid $color2;
+                border-left: 5px solid $color2;
+                border-right: 5px solid $color2;
+                //border-radius: 5px 5px 0px 0px;
+            }
+            .hr-bottom {
+                width: 65px;
+                margin: 5px auto;
+                border: 0;
+                height: 5px;
+                border-bottom: 5px solid $color2;
+                /*border-left: 5px solid $color2;
+                border-right: 5px solid $color2;*/
+                //border-radius: 0px 0px 5px 5px;
+                margin-bottom: 20px;
+            }
+            h1 {
+                text-align: center;
+                text-transform: uppercase;
+                color: $color1;
+            }
+            h2 {
+                color: #444;
+            }
+            h3 {
+                //color: #535353;
+                color: $color1;
+            }
+            p {
+                color: #555;
+                strong {
+                    color: #444;
+                }
+            }
+            .gray2 {
+                color: #888;
+            }
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: $color1 $color3;
+}
+
+body::-webkit-scrollbar-track {
+    background: $color3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color1;
+    //border-radius: 3px;
+    //border: 3px solid var(--scrollbarBG);
+}
+
+
+@media(min-width: $break-medium) {
+    top-header {
+        display: none;
+    }
+
+
+    main {
+        width: calc(100% - 230px);
+        margin-left: auto;
+    }
+}
+
+@media(max-width: $break-medium) {
+    header {
+       display: none;
+    }
+     @import 'top-header';
+    main {
+        margin-top: 50px;
+    }
+}

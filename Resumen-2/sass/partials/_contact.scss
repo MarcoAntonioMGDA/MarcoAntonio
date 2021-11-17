@@ -1,0 +1,104 @@
+.contact-page {
+    .middle-box {
+        @media (min-width: $break-intermedium) {
+            border-left: 1px solid rgba(128, 128, 128, 0.15);
+            border-right: 1px solid rgba(128, 128, 128, 0.15);
+        }
+
+        @media (max-width: $break-medium) {
+            border-top: 1px solid rgba(128, 128, 128, 0.15);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+            padding: 10px 0px;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color1;
+        font-weight: bold;
+        transition: 0.5s all;
+
+        &:hover {
+            color: $color4;
+        }
+    }
+
+    .map-container {
+        padding-top: 20px;
+
+        .place-map {
+            width: 100%;
+            height: 50vh;
+        }
+    }
+
+    .social-media {
+        background: #f4f4f4;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        .top-arrow {
+            width: 50px;
+            height: 50px;
+            border-top: 2px solid $color1;
+            border-right: 2px solid $color1;
+            //border-radius: 3px 0px 3px 0px;
+            margin-left: auto;
+        }
+        
+        .w100p  {
+            padding: 10px 5% 0px 5%;
+             .tittle {
+            padding-left: 10px;
+            border-left: 2px solid gray;
+            color: black;
+        }
+
+        .subtittle {
+            padding-left: 10px;
+            border-left: 2px solid $color1;
+            color: black;
+        }
+        }
+
+        .body {
+            padding: 10px 5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            a {
+                background: $color1;
+                border: 1px solid $color1;
+                color: $color3;
+                /*padding: 30px;*/
+                font-weight: normal;
+                margin: 5px;
+                font-size: 22px;
+                width: 55px;
+                height: 55px;
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+                &:hover {
+                background: $color2;
+                border: 1px solid $color1;
+                color: $color1;
+                }
+            }
+        }
+
+        .bottom-arrow {
+            width: 50px;
+            height: 50px;
+            border-bottom: 2px solid $color1;
+            border-left: 2px solid $color1;
+            //border-radius: 3px 0px 3px 0px;
+            margin-right: auto;
+        }
+    }
+}

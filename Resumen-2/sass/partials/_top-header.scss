@@ -1,0 +1,57 @@
+top-header {
+    position: fixed;
+    width: 100%;
+    min-width: 300px;
+    background: $color3;
+    //color: $color2;
+    height: 55px;
+    min-height: 55px;
+    max-height: 55px;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        .Logo-Mb {
+            width: 45px;
+            border-radius: 50%;
+            margin: 0px 5px;
+            border: 3px solid $color1;
+            pointer-events: none
+        }
+
+        .Page-Name-Link {
+            text-decoration: none;
+            font-weight: bold;
+            color: $color1;
+            font-size: 22px;
+            transition: 0.5s all;
+
+            &:hover {
+                color: $color4;
+            }
+        }
+    }
+    #menu-btn {
+        font-size: 25px;
+        padding: 10px;
+        
+        
+        cursor: pointer;
+        color: $color1;
+        transition: 0.5s all;
+        &:hover {
+            transform: scale(1.1);
+            color: $color2;
+            background: $color1;
+        }
+    }
+}
